@@ -31,7 +31,6 @@ def decryptCaesar(shift, text):
 
 
 def encryptVigenere(key, text):
-
 	del msg[:]
 	for i in range(0, len(text)):
 		shift = (ord(text[i])- 65)
@@ -41,7 +40,6 @@ def encryptVigenere(key, text):
 
 
 def decryptVigenere(key, enc_text):	
-
 	del msg[:]
 	for i in range(0, len(enc_text)):
 		shift = (ord(key[i % len(key)]) - 65)
